@@ -1,69 +1,84 @@
-# Memory Visualizer
+# Memory Visualizer Revamped
 
-A WPF application for visualizing and debugging memory structures of running applications.
+A powerful WPF-based application for visualizing hierarchical memory structures using Microsoft Automatic Graph Layout (MSAGL).
 
-## Project Log
+## Features
 
-### Session 1 (Initial Setup) - [Current Date]
-- Created WPF application with MSAGL integration
-- Implemented basic node visualization
-- Added sample business hierarchy visualization
-- Features implemented:
-  - Color-coded nodes by type (Company, Division, Employee, Product)
-  - Revenue information in tooltips
-  - Multiple layout options
-  - Interactive graph manipulation
+### Core Visualization
+- Interactive graph visualization using Microsoft MSAGL
+- Multiple layout algorithms (Sugiyama, MDS, Ranking)
+- Color-coded nodes based on entity types
+- Tooltips with detailed information
+
+### Data Structure Support
+- Hierarchical node representation
+- Support for various entity types:
+  - Companies
+  - Divisions
+  - Employees
+  - Products
+  - Revenue information
+- Rich node properties including labels, types, and custom attributes
+
+### User Interface
+- Clean, modern WPF interface
+- Interactive graph viewer
+- Layout algorithm selector
+- Refresh and Export capabilities
+
+## Technical Details
+
+### Built With
+- .NET 8.0
+- Windows Presentation Foundation (WPF)
+- Microsoft Automatic Graph Layout (MSAGL)
+- Windows Forms Integration (for MSAGL viewer)
+
+### Node Types and Colors
+- Company: Light Blue
+- Division: Light Green
+- Employee: Light Yellow
+- Product: Light Pink
+- Revenue: Light Gray
+
+## Development Roadmap
 
 ### Current Features
-- **Visualization**
-  - Node Types:
-    - Company (Blue)
-    - Division (Green)
-    - Employee (Yellow)
-    - Product (Pink)
-  - Hierarchical data display
-  - Interactive graph manipulation
-  - Multiple layout options
-
-- **Data Structure**
-  - Company hierarchy
-  - Sales data
-  - Revenue tracking
-  - Employee information
+- Basic graph visualization
+- Hierarchical data representation
+- Sample data generation
+- Multiple layout algorithms
+- Color-coded nodes
+- Tooltips
 
 ### Planned Features
-- [ ] Export functionality (DOT/JSON formats)
-- [ ] Memory inspection of target application
-- [ ] Real-time data updates
-- [ ] Advanced filtering options
-- [ ] Search functionality
-- [ ] Custom layout saving
-- [ ] Node grouping
-- [ ] Detailed node information panel
+- Export functionality
+- External data source support
+- Enhanced layout options
+- Additional visualization styles
+- Performance optimizations
 
-## Project Structure
-MemoryVisualizer/
-├── Models/
-│   └── MemoryNode.cs          # Core data structure
-├── MainWindow.xaml            # Main UI
-├── MainWindow.xaml.cs         # Main logic
-└── App.xaml                   # Application configuration
+## Getting Started
 
-## Dependencies
-- Microsoft.Msagl
-- Microsoft.Msagl.Drawing
-- Microsoft.Msagl.GraphViewerGDI
-- .NET 8.0
+### Prerequisites
+- Visual Studio 2022 or later
+- .NET 8.0 SDK
+- Windows 10/11
 
-## Setup Instructions
-1. Install Visual Studio 2022 or later
-2. Install .NET 8.0 SDK
-3. Open solution
-4. Restore NuGet packages
-5. Build and run
+### Building
+1. Clone the repository
+2. Open the solution in Visual Studio
+3. Restore NuGet packages
+4. Build and run
 
-## Development Guidelines
-1. Document all major changes in the Project Log section
-2. Keep track of feature implementations and modifications
-3. Note any breaking changes or important updates
-4. Document any dependencies added or modified
+## Sample Data
+The application comes with a built-in sample dataset representing a company structure:
+- Root company (TechSales Corp)
+  - Hardware Division
+    - Multiple employees
+    - Hardware products
+  - Software Division
+    - Multiple employees
+    - Software products
+
+Each entity includes realistic metadata such as revenue figures, job titles, and relationships.
