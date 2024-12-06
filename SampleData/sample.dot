@@ -1,0 +1,42 @@
+digraph {
+  // Node definitions with attributes
+  company1 [label="TechCorp Global\nAnnual Revenue: $75M" shape=box style=filled fillcolor=lightblue]
+  
+  // Cloud Services Division
+  div1 [label="Cloud Services Division\nRevenue: $45M" shape=box style=filled fillcolor=lightgreen]
+  emp1 [label="John Smith\nSenior Cloud Architect\nRevenue: $15M" shape=box style=filled fillcolor=lightyellow]
+  emp2 [label="Sarah Johnson\nSolutions Architect\nRevenue: $30M" shape=box style=filled fillcolor=lightyellow]
+  prod1 [label="Cloud Storage\nRevenue: $8M" shape=box style=filled fillcolor=lightpink]
+  prod2 [label="Cloud Computing\nRevenue: $7M" shape=box style=filled fillcolor=lightpink]
+  prod3 [label="AI Platform\nRevenue: $18M" shape=box style=filled fillcolor=lightpink]
+  prod4 [label="ML Services\nRevenue: $12M" shape=box style=filled fillcolor=lightpink]
+  
+  // Security Division
+  div2 [label="Security Division\nRevenue: $30M" shape=box style=filled fillcolor=lightgreen]
+  emp3 [label="Michael Chen\nSecurity Director\nRevenue: $20M" shape=box style=filled fillcolor=lightyellow]
+  emp4 [label="Lisa Brown\nSecurity Engineer\nRevenue: $10M" shape=box style=filled fillcolor=lightyellow]
+  prod5 [label="Firewall Suite\nRevenue: $12M" shape=box style=filled fillcolor=lightpink]
+  prod6 [label="Endpoint Security\nRevenue: $8M" shape=box style=filled fillcolor=lightpink]
+  prod7 [label="Identity Management\nRevenue: $6M" shape=box style=filled fillcolor=lightpink]
+  prod8 [label="Access Control\nRevenue: $4M" shape=box style=filled fillcolor=lightpink]
+  
+  // Edge definitions
+  company1 -> div1
+  company1 -> div2
+  
+  div1 -> emp1
+  div1 -> emp2
+  
+  emp1 -> prod1
+  emp1 -> prod2
+  emp2 -> prod3
+  emp2 -> prod4
+  
+  div2 -> emp3
+  div2 -> emp4
+  
+  emp3 -> prod5
+  emp3 -> prod6
+  emp4 -> prod7
+  emp4 -> prod8
+}

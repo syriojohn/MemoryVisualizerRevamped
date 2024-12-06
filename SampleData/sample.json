@@ -1,0 +1,104 @@
+{
+  "id": "company1",
+  "label": "TechCorp Global",
+  "type": "Company",
+  "tooltip": "Annual Revenue: $75M",
+  "children": [
+    {
+      "id": "div1",
+      "label": "Cloud Services Division",
+      "type": "Division",
+      "tooltip": "Revenue: $45M",
+      "children": [
+        {
+          "id": "emp1",
+          "label": "John Smith",
+          "type": "Employee",
+          "tooltip": "Senior Cloud Architect\nRevenue: $15M",
+          "children": [
+            {
+              "id": "prod1",
+              "label": "Cloud Storage",
+              "type": "Product",
+              "tooltip": "Revenue: $8M"
+            },
+            {
+              "id": "prod2",
+              "label": "Cloud Computing",
+              "type": "Product",
+              "tooltip": "Revenue: $7M"
+            }
+          ]
+        },
+        {
+          "id": "emp2",
+          "label": "Sarah Johnson",
+          "type": "Employee",
+          "tooltip": "Solutions Architect\nRevenue: $30M",
+          "children": [
+            {
+              "id": "prod3",
+              "label": "AI Platform",
+              "type": "Product",
+              "tooltip": "Revenue: $18M"
+            },
+            {
+              "id": "prod4",
+              "label": "ML Services",
+              "type": "Product",
+              "tooltip": "Revenue: $12M"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "div2",
+      "label": "Security Division",
+      "type": "Division",
+      "tooltip": "Revenue: $30M",
+      "children": [
+        {
+          "id": "emp3",
+          "label": "Michael Chen",
+          "type": "Employee",
+          "tooltip": "Security Director\nRevenue: $20M",
+          "children": [
+            {
+              "id": "prod5",
+              "label": "Firewall Suite",
+              "type": "Product",
+              "tooltip": "Revenue: $12M"
+            },
+            {
+              "id": "prod6",
+              "label": "Endpoint Security",
+              "type": "Product",
+              "tooltip": "Revenue: $8M"
+            }
+          ]
+        },
+        {
+          "id": "emp4",
+          "label": "Lisa Brown",
+          "type": "Employee",
+          "tooltip": "Security Engineer\nRevenue: $10M",
+          "children": [
+            {
+              "id": "prod7",
+              "label": "Identity Management",
+              "type": "Product",
+              "tooltip": "Revenue: $6M"
+            },
+            {
+              "id": "prod8",
+              "label": "Access Control",
+              "type": "Product",
+              "tooltip": "Revenue: $4M"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

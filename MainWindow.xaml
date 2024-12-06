@@ -1,0 +1,27 @@
+<Window x:Class="MemoryVisualizer.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:wf="clr-namespace:System.Windows.Forms.Integration;assembly=WindowsFormsIntegration"
+        xmlns:gv="clr-namespace:Microsoft.Msagl.GraphViewerGdi;assembly=Microsoft.Msagl.GraphViewerGDI"
+        xmlns:local="clr-namespace:MemoryVisualizer"
+        mc:Ignorable="d"
+        Title="Memory Visualizer" Height="450" Width="800">
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="*"/>
+        </Grid.RowDefinitions>
+        
+        <ToolBar Grid.Row="0">
+            <Button x:Name="btnLoadJson" Click="btnLoadJson_Click">Load JSON</Button>
+            <Button x:Name="btnLoadDot" Click="btnLoadDot_Click">Load DOT</Button>
+            <Button x:Name="btnRefresh" Click="btnRefresh_Click">Refresh</Button>
+        </ToolBar>
+
+        <wf:WindowsFormsHost Grid.Row="1">
+            <gv:GViewer x:Name="viewer"/>
+        </wf:WindowsFormsHost>
+    </Grid>
+</Window>
